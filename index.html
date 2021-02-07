@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry Master</title>
+    <link
+      rel="shortcut icon"
+      href="logo/hungry-monster.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap cdn css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light container navbar-background"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bolder" href="index.html"
+          ><img class="logo" src="logo/hungry-monster.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="index.html"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="index.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Food search  -->
+    <div class="col-md-6 m-auto mt-4 mb-5">
+      <div class="input-group input-group-lg mb-3">
+        <input
+          id="searchMealName"
+          type="text"
+          class="form-control"
+          placeholder="Search for Meal..."
+          aria-label="Search for Meal..."
+          aria-describedby="button-addon2"
+        />
+        <button id="searchMealBtn" class="btn btn-success" type="button">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <!-- show Alert -->
+    <div
+      id="alertMessage"
+      class="alert alert-dark alert-dismissible fade show col-md-8 fw-bold m-auto mb-2"
+      role="alert"
+    >
+      <strong>No food available !!</strong>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- meal details -->
+    <div id="mealDetails"></div>
+
+    <!-- meal show -->
+    <section class="container">
+      <div id="mealShow" class="row"></div>
+    </section>
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
