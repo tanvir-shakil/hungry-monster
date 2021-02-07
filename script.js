@@ -1,7 +1,7 @@
 document.getElementById("searchMealBtn").addEventListener("click", () => {
   const mealName = document.getElementById("searchMealName").value;
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`)
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((data) => getMeal(data));
 });
 
@@ -32,7 +32,7 @@ const getMeal = (meal) => {
 
 const getData = (mealTitle, callFunction) => {
   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealTitle}`)
-    .then((response) => response.json())
+    .then((res) => res.json())
     .then((data) => showDetails(data));
 };
 const showDetails = (mealDetail) => {
