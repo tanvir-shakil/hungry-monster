@@ -1,0 +1,14 @@
+#mealDetails {
+  margin-bottom: 20px;
+}
+#alertMessage {
+  display: none;
+  background: rgb(200, 255, 71);
+}
+#searchMealBtn {
+  background: #8b2c64;
+}
+
+img.logo {
+  width: 60px;
+}
